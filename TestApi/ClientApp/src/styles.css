@@ -1,0 +1,32 @@
+/* You can add global styles to this file, and also import other style files */
+@import "~@angular/material/prebuilt-themes/pink-bluegrey.css";
+
+.container {
+    text-align: center;
+    max-width: 1200px;
+    min-width: 600px;
+}
+.product {
+    max-width: 400px;
+    border: 1px solid black;
+    border-radius: 5px;
+    padding: 10px;
+    margin: 10px;
+    position: relative;
+    float: left;
+}
+
+.product-content {
+    position: relative;
+}
+.product-model {
+    padding: 5px;
+    font-size: 120%;
+}
+.product-sn{
+    padding: 5px;
+}
+.product-model span.code, .product-sn .number {
+    font-size: 100%;
+    display: block;
+}

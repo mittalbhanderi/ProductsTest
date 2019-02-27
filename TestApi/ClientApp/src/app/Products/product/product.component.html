@@ -1,0 +1,16 @@
+<ng-container *ngIf="product; else noProductTemplate">
+  <mat-card class="product">
+    <mat-card-header>
+      <mat-card-title> {{product.id}} {{product.productName}}</mat-card-title>
+    </mat-card-header>
+    <mat-card-content>
+      <div class="product-content">      
+        <div class="product-model">Model Code: <span class="code">{{product.modelCode}}</span></div>
+        <div class="product-sn">Serial Number: <span class="number">{{product.serialNumber}}</span></div>
+      </div>
+    </mat-card-content>
+  </mat-card>
+</ng-container>
+<ng-template #noProductTemplate>
+  Product Detail Unavailable.
+</ng-template>
